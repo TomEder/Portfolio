@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import './header.styles.css'
-
+import { HeaderContainer, HeaderText} from './header.styles'
 
 class Header extends Component {
     render() {
         return (
-            <header>
-                <h1>Tom Ederstål</h1>
+            <HeaderContainer>
+                <HeaderText>Tom Ederstål</HeaderText>
                 
                
                 
-            </header>
+            </HeaderContainer>
         );
     }
 }

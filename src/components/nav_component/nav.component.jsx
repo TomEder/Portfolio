@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import './nav.styles.css'
+import { NavContainer, NavText} from './nav.styles';
 
 
 
 class NavBar extends Component {
     render() {
         return (
-            <nav class='side_nav'>
-                <a href="#"><h2>Home</h2></a>
+            <NavContainer>
+                <a href="#"><NavText>Home</NavText></a>
 
-                <a href="#"><h2>About</h2></a>
+                <a href="#"><NavText>About</NavText></a>
 
-                <a href="#"><h2>Projects</h2></a>
+                <a href="#"><NavText>Projects</NavText></a>
 
-                <a href="#"><h2>Contact</h2></a>
+                <a href="#"><NavText>Contact</NavText></a>
 
-            </nav>
+            </NavContainer>
         );
     }
 }

@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import './about.styles.css'
+import Avatar from './avataaars.png';
+
+
+import { AboutContainer, AboutHead, AboutText, AboutSub, AboutLink} from './about.styles';
+
 
 class About extends Component {
     render() {
         return (
-            <div className='About'>
-                <h1>ABOUT ME</h1>
-                <p>I'm styding to become a front-end developer at KYH in Stockholm, Sweden. <br/> I am very excited to start my journey in this business.</p>
-                <h3>Stay tuned!</h3>
-                <p>just some text hehehehe</p>
-            </div>
+            <AboutContainer className='About'>
+                <AboutHead>ABOUT ME</AboutHead>
+                <img src="{Avatar}" alt="Avatar image"/>
+                <AboutText>I'm styding to become a front-end developer at KYH in Stockholm, Sweden.</AboutText>
+                <AboutLink href="https://github.com/TomEder" target="_blank">My GitHub</AboutLink>
+                <AboutSub>Stay tuned!</AboutSub>
+            </AboutContainer>
         );
     }
 }

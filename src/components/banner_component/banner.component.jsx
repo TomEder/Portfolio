@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './banner.styles.css';
 import Stockholm from './photo-of-buildings-near-body-of-water-1529040.jpg';
-
+import {BannerImage} from './banner.styles'
 
 class Banner extends Component {
     render() {
         return (
-            <img className="BannerImage" src={Stockholm} alt=""/>
+            <BannerImage className="BannerImage" src={Stockholm} alt=""/>
         );
     }
 }

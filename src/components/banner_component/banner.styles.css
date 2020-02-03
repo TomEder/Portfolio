@@ -1,9 +1,0 @@
-.BannerImage{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-column: 1 / 5;
-    grid-row: 1 / 4;
-    display: flex;
-    
-};
