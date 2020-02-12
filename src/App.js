@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header_component/header.component'
-import NavBar from './components/nav_component/nav.component'
 import Banner from './components/banner_component/banner.component'
 import About from './components/about_component/about.component'
 import Projects from './components/projects_component/projects.component'
@@ -50,7 +49,7 @@ class App extends React.Component {
       <div className='App'>
         <Banner />
         <Header />
-        <NavBar />
+        
         <About />
         <Projects />
         <Contact />

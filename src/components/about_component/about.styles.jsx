@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
     display: grid;
     grid-column: 1 / 3;
     grid-row: 3 / 5;
-    background-color: rgb(223, 247, 247);
+    background-color: rgba(235, 247, 255);
     color: rgb(85, 96, 96);
     height: 50%;
     

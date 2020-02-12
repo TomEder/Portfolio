@@ -10,7 +10,6 @@ class About extends Component {
         return (
             <AboutContainer className='About'>
                 <AboutHead>ABOUT ME</AboutHead>
-                <img src="{Avatar}" alt="Avatar image"/>
                 <AboutText>I'm styding to become a front-end developer at KYH in Stockholm, Sweden.</AboutText>
                 <AboutLink href="https://github.com/TomEder" target="_blank">My GitHub</AboutLink>
                 <AboutSub>Stay tuned!</AboutSub>
