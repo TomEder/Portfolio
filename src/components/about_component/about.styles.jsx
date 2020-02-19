@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
     background-color: rgba(235, 247, 255);
     color: rgb(85, 96, 96);
     height: 50%;
+    justify-content: center;
     
     `;
 
@@ -27,7 +28,16 @@ export const AboutSub = styled.h3`
 `;
 
 export const AboutLink = styled.a`
+    width: 30px;
     display: flex;
-    justify-content: center;
+    color: rgb(85, 96, 96);
+    font-size: 25px;
+    
+
+    &:hover {
+    color: rgb(85, 96, 96);
+    font-size: 27px;
+    transition: 0.2s;
+}
 `;
 

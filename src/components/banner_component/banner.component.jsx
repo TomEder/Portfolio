@@ -5,7 +5,9 @@ import {BannerImage} from './banner.styles'
 class Banner extends Component {
     render() {
         return (
-            <BannerImage className="BannerImage" src={Stockholm} alt=""/>
+            
+            <BannerImage className="Home" src={Stockholm} alt=""/>
+            
         );
     }
 }

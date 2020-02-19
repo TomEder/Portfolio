@@ -6,6 +6,7 @@ import About from './components/about_component/about.component'
 import Projects from './components/projects_component/projects.component'
 import Contact from './components/Contact_component/Contact.component'
 import Weather from './components/weather_component/weather.component'
+import {BrowserRouter, Route} from 'react-router-dom'
 
 
 //api call api.openweathermap.org/data/2.5/weather?q=London,uk
@@ -28,7 +29,7 @@ class App extends React.Component {
     return cell;
   }
 
-  getWeather= async () =>{
+  getWeather = async () =>{
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Stockholm,se&appid=${API_KEY}`);
 
     const response = await api_call.json();
@@ -46,10 +47,10 @@ class App extends React.Component {
 
   render() {
     return (
+      <BrowserRouter>
       <div className='App'>
         <Banner />
         <Header />
-        
         <About />
         <Projects />
         <Contact />
@@ -58,10 +59,11 @@ class App extends React.Component {
           country={this.state.country}
           temp_celsius={this.state.celsius}
           description={this.state.description} />
+        </div>
+        </BrowserRouter>
         
         
-        
-      </div>
+      
     );
   }
 }

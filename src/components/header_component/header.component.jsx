@@ -1,48 +1,75 @@
 import React, { Component } from 'react';
-import { HeaderContainer, HeaderText, NavText, HeadA} from './header.styles'
+import { HeaderContainer, HeaderText, NavText, HeadA } from './header.styles'
 
+import { Link } from "react-scroll";
 
 
 class Header extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            scrollPos: 0
-        };
-    }
-
-    componentDidMount() {
-        window.addEventListener("scroll", this.updateScroll);
-        this.updateScroll();
-    }
-
-    componentWillUnmountt() {
-        window.removeEventListener("scroll", this.updateScroll);
-    }
-
-    updateScroll = () =>
-        this.setState({ scrollPos: document.documentElement.scrollTop });
-
-    render() {  
+    render() {
 
 
         return (
             <HeaderContainer>
                 <HeaderText>Tom Ederstål</HeaderText>
-
                 <NavText>
 
-                    <HeadA href="#">Home</HeadA>
 
-                <HeadA href="#">About Me</HeadA>
+                    <HeadA>
+                        <Link
+                            activeClass="active"
+                            to="Home"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                        >
+                            Home
+</Link>
+                    </HeadA>
 
-                <HeadA href="#">Projects</HeadA>
+                    <HeadA>
+                        <Link
+                            activeClass="active"
+                            to="About"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                        >
+                            About
+</Link>
+                    </HeadA>
 
-                <HeadA href="#">Contact</HeadA> 
+                    <HeadA>
+                        <Link
+                            activeClass="active"
+                            to="Projects"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                        >
+                            Projects
+</Link>
+                    </HeadA>
+
+                    <HeadA>
+                        <Link
+                            activeClass="active"
+                            to="Contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                        >
+                            Contact
+</Link>
+                    </HeadA>
+
                 </NavText>
-               
-                
+
+
             </HeaderContainer>
         );
     }

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
-    displaY: grid;
+    display: grid;
     grid-column: 1 / 3;
-    grid-row-start: 4;
+    grid-row: 4 / 8;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -14,4 +14,8 @@ export const ProjectsContainer = styled.div`
 export const ProjectsHead = styled.h1`
     justify-content: center;
 
+`
+
+export const ProjectImg = styled.img`
+height: 200px;
 `

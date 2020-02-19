@@ -37,6 +37,7 @@ left: 10px;
 export const HeadA = styled.a`
 text-decoration: none;
 color: rgb(85, 96, 96);
+cursor: pointer;
 
 &:hover {
     color: rgb(85, 96, 96);
