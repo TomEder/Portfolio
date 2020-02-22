@@ -8,6 +8,7 @@ class Banner extends Component {
             
             <BannerImage className="Home" src={Stockholm} alt=""/>
             
+            
         );
     }
 }

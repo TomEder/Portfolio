@@ -14,7 +14,7 @@ class Header extends Component {
                 <HeaderText>Tom Ederstål</HeaderText>
                 <NavText>
 
-
+                
                     <HeadA>
                         <Link
                             activeClass="active"
@@ -22,7 +22,7 @@ class Header extends Component {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}
+                            duration={400}
                         >
                             Home
 </Link>
@@ -35,7 +35,7 @@ class Header extends Component {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}
+                            duration={400}
                         >
                             About
 </Link>
@@ -48,7 +48,7 @@ class Header extends Component {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}
+                            duration={400}
                         >
                             Projects
 </Link>
@@ -61,11 +61,12 @@ class Header extends Component {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}
+                            duration={400}
                         >
                             Contact
 </Link>
                     </HeadA>
+                    
 
                 </NavText>
 

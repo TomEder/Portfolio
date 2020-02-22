@@ -6,9 +6,13 @@ export const AboutContainer = styled.div`
     grid-row: 3 / 5;
     background-color: rgba(235, 247, 255);
     color: rgb(85, 96, 96);
-    height: 50%;
-    justify-content: center;
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
     `;
 
 export const AboutHead = styled.h1`
@@ -19,12 +23,13 @@ export const AboutHead = styled.h1`
 
 export const AboutText = styled.p`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
 `;
 
 export const AboutSub = styled.h3`
     display: flex;
-    justify-content: center;
 `;
 
 export const AboutLink = styled.a`
@@ -39,5 +44,9 @@ export const AboutLink = styled.a`
     font-size: 27px;
     transition: 0.2s;
 }
+`;
+
+export const AboutImg = styled.img`
+ height: 200px;
 `;
 
