@@ -19,7 +19,7 @@ class App extends React.Component {
     super();
     this.state = {
       city : undefined,
-      country : undefined
+      country : undefined,
     };
     this.getWeather();
   }
@@ -40,7 +40,6 @@ class App extends React.Component {
       city : response.name,
       country : response.sys.country,
       celsius : this.calCelsius(response.main.temp),
-      description : '',
       error : false
     })
   }
@@ -57,8 +56,7 @@ class App extends React.Component {
         <Weather
           city={this.state.city}
           country={this.state.country}
-          temp_celsius={this.state.celsius}
-          description={this.state.description} />
+          temp_celsius={this.state.celsius}/>
         </div>
         </BrowserRouter>
         

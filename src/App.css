@@ -5,5 +5,9 @@
     grid-auto-columns: 50%;
     font-family: 'montserrat', sans-serif;
 
+        @media only screen and (max-width: 720px) {
+    grid-auto-columns: 100%;
+}
+
 }
 

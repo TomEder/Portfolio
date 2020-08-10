@@ -11,6 +11,11 @@ export const ProjectsContainer = styled.div`
     color: rgb(85, 96, 96);
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 720px) {
+    font-size: 9px;
+    text-align: center;
+}
     
     `
 export const ProjectsHead = styled.h1`
@@ -20,4 +25,14 @@ export const ProjectsHead = styled.h1`
 
 export const ProjectImg = styled.img`
 height: 200px;
+
+   @media only screen and (max-width: 720px) {
+    height: 175px;
+}
+
+`
+
+export const ProjectItem = styled.h3`
+
+
 `

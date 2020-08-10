@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Quire from './Capture.PNG';
 import TGN from './CaptureTGN.PNG';
 
-import { ProjectsContainer, ProjectsHead, ProjectImg} from './projects.styles';
+import { ProjectsContainer, ProjectsHead, ProjectImg, ProjectItem } from './projects.styles';
 
 class Projects extends Component {
     render() {
@@ -10,18 +10,18 @@ class Projects extends Component {
             <ProjectsContainer className="Projects">
                 <ProjectsHead>MY PROJECTS</ProjectsHead>
 
-                <h3>
-                    <ProjectImg src={Quire} alt=""/>
+                <ProjectItem>
+                    <ProjectImg src={Quire} alt="Quire - A simple note app in your browser!" /> <br />
                     Quire - A simple note app in your browser!
-                </h3>
-                <h3>
-                    <ProjectImg src={TGN} alt="" />
+                </ProjectItem>
+                <ProjectItem>
+                    <ProjectImg src={TGN} alt="TGN - My own news site about games, TV-shows and movies." /> <br />
                     TGN - My own news site about games, TV-shows and movies.
-                </h3>
-                
-                
+                </ProjectItem>
+
+
             </ProjectsContainer>
-            
+
         );
     }
 }
